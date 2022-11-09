@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewNotaF"
+        android:layout_width="84dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginBottom="10dp"
+        android:text="Nota Final"
+        app:layout_constraintBottom_toTopOf="@+id/textViewNotaFinal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editTextNota4"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCalcular" />
+
+    <TextView
+        android:id="@+id/textViewNotaFinal"
+        android:layout_width="136dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="97dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewR"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNotaF" />
+
+    <RadioButton
+        android:id="@+id/radioButtonNot4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="410dp"
+        android:text="35%"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/radioButtonNot3"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNota4" />
+
+    <TextView
+        android:id="@+id/textViewNota2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="12dp"
+        android:text="Nota 2"
+        app:layout_constraintBottom_toTopOf="@+id/radioButtonNot2"
+        app:layout_constraintEnd_toStartOf="@+id/textViewNota3"
+        app:layout_constraintStart_toEndOf="@+id/textViewNota1"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEstudiantes2" />
+
+    <TextView
+        android:id="@+id/textViewNota3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="7dp"
+        android:text="Nota 3"
+        app:layout_constraintBottom_toTopOf="@+id/radioButtonNot3"
+        app:layout_constraintEnd_toStartOf="@+id/textViewNota4"
+        app:layout_constraintStart_toEndOf="@+id/textViewNota2"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEstudiantes2" />
+
+    <RadioButton
+        android:id="@+id/radioButtonNot1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="54dp"
+        android:text="20%"
+        app:layout_constraintBottom_toTopOf="@+id/editTextNota1"
+        app:layout_constraintEnd_toStartOf="@+id/radioButtonNot2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNota1" />
+
+    <TextView
+        android:id="@+id/textViewNota1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="7dp"
+        android:text="Nota 1"
+        app:layout_constraintBottom_toTopOf="@+id/radioButtonNot1"
+        app:layout_constraintEnd_toStartOf="@+id/textViewNota2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEstudiantes2"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <RadioButton
+        android:id="@+id/radioButtonNot2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="33dp"
+        android:text="30%"
+        app:layout_constraintBottom_toTopOf="@+id/editTextNota1"
+        app:layout_constraintEnd_toStartOf="@+id/radioButtonNot3"
+        app:layout_constraintStart_toEndOf="@+id/radioButtonNot1"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNota2" />
+
+    <RadioButton
+        android:id="@+id/radioButtonNot3"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="199dp"
+        android:text="15%"
+        app:layout_constraintBottom_toTopOf="@+id/buttonCalcular"
+        app:layout_constraintEnd_toStartOf="@+id/radioButtonNot4"
+        app:layout_constraintStart_toEndOf="@+id/radioButtonNot2"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNota3" />
+
+    <TextView
+        android:id="@+id/textViewNota4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="7dp"
+        android:text="Nota 4"
+        app:layout_constraintBottom_toTopOf="@+id/radioButtonNot4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewNota3"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEstudiantes2" />
+
+    <TextView
+        android:id="@+id/textViewEstudiantes2"
+        android:layout_width="366dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="184dp"
+        android:layout_marginBottom="7dp"
+        android:text="Ingrese las notas con sus correspondientes porcentajes"
+        android:textColor="#FF5722"
+        android:textColorHighlight="#009688"
+        android:textColorLink="#009688"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewNota2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewEstudiantes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:text="Ingrese el numero de estudiantes"
+        android:textColor="#FFC107"
+        android:textColorHighlight="#009688"
+        android:textColorLink="#009688"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.139"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Sistema de notas"
+        android:textColor="#009688"
+        android:textColorHighlight="#009688"
+        android:textColorLink="#009688"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextEstudiantes"
+        android:layout_width="101dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="596dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonIngresarE"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEstudiantes"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/buttonIngresarE"
+        android:layout_width="130dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="128dp"
+        android:layout_marginBottom="585dp"
+        android:onClick="CantidadEstudiante"
+        android:text="Ingresar"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editTextEstudiantes"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEstudiantes" />
+
+    <EditText
+        android:id="@+id/editTextNota2"
+        android:layout_width="134dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="253dp"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Nota 2"
+        app:layout_constraintBottom_toTopOf="@+id/editTextNota3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNota1" />
+
+    <EditText
+        android:id="@+id/editTextNota1"
+        android:layout_width="134dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="253dp"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Nota 1"
+        app:layout_constraintBottom_toTopOf="@+id/editTextNota2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioButtonNot2" />
+
+    <EditText
+        android:id="@+id/editTextNota4"
+        android:layout_width="134dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="17dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Nota 4"
+        app:layout_constraintBottom_toTopOf="@+id/textViewR"
+        app:layout_constraintEnd_toStartOf="@+id/buttonCalcular"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNota3" />
+
+    <EditText
+        android:id="@+id/editTextNota3"
+        android:layout_width="134dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="95dp"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Nota 3"
+        app:layout_constraintBottom_toTopOf="@+id/editTextNota4"
+        app:layout_constraintEnd_toStartOf="@+id/buttonCalcular"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNota2" />
+
+    <Button
+        android:id="@+id/buttonCalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="197dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="4dp"
+        android:onClick="Calcular"
+        android:text="Calcular "
+        app:layout_constraintBottom_toTopOf="@+id/textViewNotaF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editTextNota4"
+        app:layout_constraintTop_toBottomOf="@+id/radioButtonNot4" />
+
+    <TextView
+        android:id="@+id/textViewReprobado"
+        android:layout_width="136dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginEnd="249dp"
+        android:layout_marginBottom="49dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewR" />
+
+    <TextView
+        android:id="@+id/textViewR"
+        android:layout_width="172dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="215dp"
+        android:layout_marginBottom="12dp"
+        android:text="Estudiantes reprobados"
+        app:layout_constraintBottom_toTopOf="@+id/textViewReprobado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNota4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
